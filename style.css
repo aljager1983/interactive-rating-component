@@ -1,0 +1,42 @@
+:root {
+--LightGrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    font-family: Overpass;
+    height: 100vh;
+    margin: auto;
+}
+
+.rate {
+    display: grid;
+    align-self: center;
+    margin: auto;
+    padding: 2rem;
+    width: 250px;
+    background-color: var(--VeryDarkBlue);
+    border-radius: 20px;
+}
+.star {
+    padding: .5rem;
+    background-color: var(--DarkBlue);
+    border-radius: 50%;
+}
+.thankstate {
+    display: none;
+    position: absolute;
+}
+
+.numbers {
+    display: flex;
+}
