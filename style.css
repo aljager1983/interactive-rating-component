@@ -8,35 +8,78 @@
 body {
     background-color: black;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 main {
     display: grid;
     place-content: center;
     font-family: Overpass;
-    height: 100vh;
-    margin: auto;
+    min-height: 100vh;
+    
 }
 
-.rate {
+#rate {
     display: grid;
     align-self: center;
-    margin: auto;
-    padding: 2rem;
-    width: 250px;
+    padding: 1.5rem;
+    width: 300px;
     background-color: var(--VeryDarkBlue);
     border-radius: 20px;
+    transition: .5s ease;
 }
 .star {
     padding: .5rem;
     background-color: var(--DarkBlue);
     border-radius: 50%;
 }
-.thankstate {
+
+#thankstate {
     display: none;
+    margin: auto;
     position: absolute;
+    align-self: center;
+    justify-self: center;
+    padding: 1.5rem;
+    width: 300px;
+    background-color: var(--VeryDarkBlue);
+    border-radius: 20px;
+    transition: .5s ease;
 }
 
 .numbers {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--DarkBlue);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+#num:hover{
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    padding: .5rem;
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+}
+
+h2:hover {
+    cursor: pointer;
 }
