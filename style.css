@@ -1,7 +1,7 @@
 :root {
 --LightGrey: hsl(217, 12%, 63%);
 --MediumGrey: hsl(216, 12%, 54%);
---DarkBlue: hsl(213, 19%, 18%);
+--DarkBlue: #252d37;
 --VeryDarkBlue: hsl(216, 12%, 8%);
 --orange: hsl(25, 97%, 53%);
 }
