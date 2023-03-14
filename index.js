@@ -6,25 +6,21 @@ const rate = document.getElementById("rate");
 const selected = document.getElementById("selected");
 const reload = document.getElementById("reload");
 let i = 0;
-let numbers = document.querySelectorAll(".num").length;
 
-
-//numbers selection
-for (var n=0; n<numbers; n++) {
-    document.querySelectorAll(".num")[n].addEventListener("click", function() {
-        let num = this.innerHTML;
-        const numid = "num" + num;
-        console.log(numid);
-        const colornumid = document.getElementById(numid).getAttribute("class");
-        console.log(colornumid);
-    //     if(document.getElementById(numid).style.backgroundColor === "#252d37"){
-    //         console.log("true");
-    //         // document.getElementById(numid).style.backgroundColor = "grey";
-    // } else {
-    //     console.log("false")
-    // }
-        i++;
-    })
+//select and deselect (increment and decrement)
+let elements = document.querySelectorAll(".num");
+for(element of elements){
+   element.addEventListener("click", function(){
+      if(!this.dataset.clicked){
+         this.setAttribute("data-clicked", "true");
+         this.style.backgroundColor = "#7c8798";
+         i++;
+      }else{
+         this.removeAttribute("data-clicked");
+         this.removeAttribute("style");
+         i--;
+      }
+   });
 }
 
 //reload page, can be deleted later(added UX)

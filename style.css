@@ -6,6 +6,7 @@
 --orange: hsl(25, 97%, 53%);
 }
 
+
 body {
     background-color: black;
     color: white;
@@ -64,10 +65,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--DarkBlue);
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    background-color: var(--DarkBlue);
 }
 
 .num:hover{
@@ -125,7 +126,7 @@ h5:hover {
     cursor: pointer;
 }
 p { 
-    font-size: .85rem;
+    font-size: 15px;
     font-weight: 400;
     color: var(--MediumGrey);
 }
